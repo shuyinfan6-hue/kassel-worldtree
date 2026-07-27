@@ -1,0 +1,8 @@
+:root{color-scheme:dark;font-family:Inter,"Microsoft YaHei",system-ui,sans-serif;background:#05070a}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}body{background:radial-gradient(circle at 50% 40%,#172017 0,#090d0b 32%,#030405 72%)}
+.stage{position:relative;width:100%;height:100%;min-height:520px;isolation:isolate}.stage:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 48%,transparent 0 23%,rgba(171,132,45,.07) 38%,transparent 62%);pointer-events:none}
+canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+.title{position:absolute;left:0;right:0;bottom:6.5vh;text-align:center;pointer-events:none;text-shadow:0 2px 22px #000}.title p{margin:0;color:#bca66b;font-size:clamp(10px,1.2vw,14px);letter-spacing:.52em}.title h1{margin:.25rem 0;color:#e8dfc4;font-family:Georgia,"Songti SC",serif;font-weight:400;font-size:clamp(25px,3vw,42px);letter-spacing:.28em}.title span{color:#777b70;font-size:12px;letter-spacing:.12em}
+button{position:absolute;right:18px;top:18px;border:1px solid rgba(211,187,117,.3);border-radius:999px;padding:9px 15px;color:#c9bb90;background:rgba(7,9,8,.68);backdrop-filter:blur(8px);cursor:pointer}button:hover{border-color:#c8aa5b;color:#fff}
+@media(max-width:600px){.stage{min-height:100%}.title{bottom:7vh}.title span{font-size:10px}button{right:12px;top:12px}}
+@media(prefers-reduced-motion:reduce){canvas{cursor:default}}
